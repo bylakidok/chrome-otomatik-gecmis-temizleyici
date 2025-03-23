@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Otomatik Geçmiş Temizleyici",
+  "version": "1.0",
+  "description": "Kullanıcının belirlediği aralıklarla geçmişi otomatik temizler.",
+  "permissions": ["browsingData", "storage", "alarms"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

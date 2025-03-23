@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geçmiş Temizleyici</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            width: 300px;
+            padding: 20px;
+            background: #1E1E2E;
+            color: #FFF;
+            text-align: center;
+            border-radius: 10px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 80px;
+            padding: 8px;
+            font-size: 14px;
+            text-align: center;
+            border: 2px solid #5E81AC;
+            border-radius: 5px;
+            background: #2E3440;
+            color: white;
+            outline: none;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #saveSettings {
+            background: #5E81AC;
+            color: white;
+        }
+        #saveSettings:hover {
+            background: #81A1C1;
+        }
+        #clearNow {
+            background: #BF616A;
+            color: white;
+        }
+        #clearNow:hover {
+            background: #D08770;
+        }
+    </style>
+</head>
+<body>
+    <h2>Otomatik Geçmiş Temizleyici</h2>
+    <label for="interval">Temizleme Süresi (dk):</label>
+    <input type="number" id="interval" min="1" value="60">
+    <button id="saveSettings">Ayarları Kaydet</button>
+    <button id="clearNow">Şimdi Temizle</button>
+    <script src="popup.js"></script>
+</body>
+</html>
